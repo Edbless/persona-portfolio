@@ -4,7 +4,7 @@
     <a routerLink="/" routerLinkActive="active">Home</a>
     <a routerLink="/about" routerLinkActive="active">About</a>
     <a routerLink="/skills" routerLinkActive="active">Skills</a>
-    <a routerLink="/contact" routerLinkActive="active">CONTACT</a>
+    <a routerLink="/contact" routerLinkActive="active">Contact</a>
   </div>
 </nav>
 <main class="main-content">
@@ -15,25 +15,31 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(90deg, #e91e63 0%, #4caf50 100%);
-  color: #fff;
+  background: #86afee;
+  color: #222;
   padding: 18px 40px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-bottom: 2px solid #e0e0e0;
 }
 .navbar-brand {
   font-size: 2rem;
   font-weight: bold;
   letter-spacing: 2px;
+  color: #1976d2;
 }
 .navbar-links a {
-  color: #fff;
+  color: #222;
   text-decoration: none;
   margin-left: 30px;
   font-size: 1.2rem;
-  transition: color 0.2s;
+  font-weight: 500;
+  transition: color 0.2s, border-bottom 0.2s;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
 }
 .navbar-links a.active, .navbar-links a:hover {
-  color: #ffd700;
+  color: #1976d2;
+  border-bottom: 2px solid #1976d2;
 }
 .main-content {
   min-height: 80vh;

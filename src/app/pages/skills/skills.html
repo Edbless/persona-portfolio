@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Skills</title>
-     <link rel="stylesheet" href="skills.css">
-</head>
-<body>
-
 <section class="skills-section">
   <div class="skills-card">
     <h1>My Skills <span style="color:#ff9800;">💡</span></h1>
@@ -23,7 +13,59 @@
     <button class="cta-btn" routerLink="/contact">Contact Me</button>
   </div>
 </section>
-
-</body>
-</html>
+<style>
+.skills-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  background: #f7f7f7;
+}
+.skills-card {
+  background: #fff;
+  padding: 48px 36px;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(255,152,0,0.10);
+  text-align: center;
+  width: 100%;
+  max-width: 480px;
+}
+.skills-card h1 {
+  font-size: 2.5rem;
+  color: #ff9800;
+  margin-bottom: 18px;
+}
+.skills-card p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 12px;
+}
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0;
+}
+.skills-list li {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.cta-btn {
+  background: #ff9800;
+  color: #fff;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 24px;
+}
+.cta-btn:hover {
+  background: #f57c00;
+}
+</style>
 
